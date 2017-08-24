@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto|Old+Standard+TT');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #212121;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#bod_wrapper{
+  display: flex;
+  flex-direction: row;
+  max-width: 950px;
+  width: 100%;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+.regular_text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.font_logo{
+  line-height: 60%;
+  margin: 0px 0px;
+  font-family: 'Permanent Marker', cursive;
+  color: #a5ffd0;
+  font-size: 5em;
+}
+
+.font_bca{
+  margin-top: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.logo{
+  margin-top: 0 auto;
+}
+
+.box-shadow{
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%;
+}
+
+.artist{
+  margin-top: 20px;
+}
+
+header h1{
+  font-size: 3.6em;
+  margin-bottom: 20px;
+}
+
+.social_media{
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.social_media a, .social_media a:link, .social_media a:visited{
+  color: white;
+}
+
+.social_media a:hover{
+  color: #c9e0d4;
+}
+
+.social_link{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
+}
+
+.social_media i{
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+#main_content{
+  width: 100%;
+}
+
+#main_display{
+  margin: 40px 0;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+}
+
+.album{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  max-height: 200px;
+  color: #424242
+}
+
+.album_info{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 15%;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+
+.album_info iframe{
+  width: 100%;
+  height: 100%:
+}
+
+.poster_sale{
+  height: 250px;
+  width: 100%;
+  background-image: url("../img/pricing.png");
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Old Standard TT', serif;
+  color: white;
+  -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.75);
+}
+
+.poster_wrap{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.6);
+  border-spacing: 50px;
+}
+
+.poster_caption{
+  font-size: 1.4em;
+  text-align: center;
+  margin: 20px;
+}
+
+@media (max-width: 950px) {
+    #bod_wrapper{
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      width: 100%;
+    }
+    .social_media{
+      display: flex;
+      align-items: center;
+    }
+    .album{
+      display: flex;
+      flex-direction: column;
+      margin: 40px 20px;
+    }
+    .album_info{
+      display: flex;
+      align-items: center;
+      margin: 10px 0px;
+    }
+    .regular_text{
+      display: flex;
+      align-items: center;
+    }
+}
